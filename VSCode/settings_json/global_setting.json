@@ -1,0 +1,69 @@
+{
+  /**【エディタ画面】*/
+  // 括弧に色をつける
+  "editor.bracketPairColorization.enabled": true,
+  // デフォルトのフォーマッタ：prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ミニマップを非表示
+  "editor.minimap.enabled": false,
+  // 全角空白を表示
+  "editor.renderWhitespace": "all",
+  // タブのサイズをスペース2個分に割当
+  "editor.tabSize": 2,
+  // ctrl + wheelで拡大縮小
+  "editor.mouseWheelZoom": true,
+  // カーソルぬるぬる
+  "editor.cursorSmoothCaretAnimation": "on",
+  // プレークポイントの領域を削る
+  "editor.glyphMargin": false,
+
+  /** 【エクスプローラ】*/
+  // 削除時に確認無しでゴミ箱行き
+  "explorer.confirmDelete": false,
+  // ファイルの並べかえを拡張子毎に行う
+  "explorer.sortOrder": "type",
+
+  /**【ファイル操作】*/
+  // フォーカスを失うと保存
+  "files.autoSave": "onFocusChange",
+
+  /** 【ワークベンチ】*/
+  // アイコンのテーマ
+  "workbench.iconTheme": "material-icon-theme",
+  // ワークベンチのアイコンをトップにする
+  "workbench.activityBar.location": "top",
+  // VSCode開いたときの「ようこそ」を表示しない
+  "workbench.startupEditor": "none",
+
+  /** 【vim】*/
+  // VSCodeVim 拡張で設定された Vim のキーではなく、VSCode で設定されているキーを実行するようにする
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  //検索でマッチした箇所をハイライトする
+  "vim.hlsearch": true,
+  // インサートモード時のキーバインド設定
+  "vim.insertModeKeyBindings": [
+    //   エスケープキーをjjに割当
+    { "after": ["<Esc>"], "before": ["j", "j"] }
+  ],
+  // クリップボードに貼り付け
+  "vim.useSystemClipboard": true,
+
+  /**【ターミナル】*/
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+
+  /**[TypeScript】*/
+  // 関数や変数の被 import 数を表示
+  "typescript.referencesCodeLens.enabled": true,
+
+  /**【TailwindCSS】*/
+  // 拡張機能Tailwind Foldで勝手にclassNameを閉じるのを無効
+  "tailwind-fold.autoFold": false,
+  "window.zoomLevel": 2,
+  "editor.accessibilitySupport": "off"
+}
