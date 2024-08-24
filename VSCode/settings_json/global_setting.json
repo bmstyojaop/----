@@ -34,6 +34,8 @@
   "workbench.activityBar.location": "top",
   // VSCode開いたときの「ようこそ」を表示しない
   "workbench.startupEditor": "none",
+  // 最大表示タブ数を制限する
+  "workbench.editor.limit.value": 5,
 
   /** 【vim】*/
   // VSCodeVim 拡張で設定された Vim のキーではなく、VSCode で設定されているキーを実行するようにする
@@ -64,6 +66,16 @@
   /**【TailwindCSS】*/
   // 拡張機能Tailwind Foldで勝手にclassNameを閉じるのを無効
   "tailwind-fold.autoFold": false,
+  // unknownAtRulesで警告が出るのを防ぐ
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "window.zoomLevel": 2,
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "zenMode.showTabs": "none",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "zenMode.hideStatusBar": false
 }
