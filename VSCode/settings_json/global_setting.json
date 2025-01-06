@@ -16,6 +16,10 @@
   "editor.cursorSmoothCaretAnimation": "on",
   // プレークポイントの領域を削る
   "editor.glyphMargin": false,
+  // Markdownの折り返し
+  "[markdown]": {
+    // "editor.wordWrap": "off",
+  },
 
   /** 【エクスプローラ】*/
   // 削除時に確認無しでゴミ箱行き
@@ -36,6 +40,10 @@
   "workbench.startupEditor": "none",
   // 最大表示タブ数を制限する
   "workbench.editor.limit.value": 5,
+  // ワークベンチのインデントを変更
+  "workbench.tree.indent": 16,
+  // ワークベンチの補助線を変更
+  "workbench.tree.renderIndentGuides": "always",
 
   /** 【vim】*/
   // VSCodeVim 拡張で設定された Vim のキーではなく、VSCode で設定されているキーを実行するようにする
@@ -70,12 +78,9 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "window.zoomLevel": 2,
-  "editor.accessibilitySupport": "off",
-  "git.openRepositoryInParentFolders": "never",
-  "security.workspace.trust.untrustedFiles": "open",
-  "zenMode.showTabs": "none",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "GitHub Dark Default",
-  "zenMode.hideStatusBar": false
+  /** 【スペルチェッカー】 */
+  // 単語追加
+  "cSpell.userWords": ["clsx"],
+
+
 }
