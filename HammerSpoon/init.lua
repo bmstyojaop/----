@@ -15,7 +15,12 @@ units = {
   maximum       = { x = 0.00, y = 0.00, w = 1.00, h = 1.00 }
 }
 
+stage_units = {
+  maximum       = { x = 0.07, y = 0.00, w = 0.93, h = 1.00 }
+}
+
 mash = { 'option', 'ctrl', 'cmd' }
+stage_enabled = {'option', 'ctrl'}
 hs.hotkey.bind(mash, '4', function() hs.window.focusedWindow():move(units.right30,    nil, true) end)
 hs.hotkey.bind(mash, 'l', function() hs.window.focusedWindow():move(units.right50,    nil, true) end)
 hs.hotkey.bind(mash, 'right', function() hs.window.focusedWindow():move(units.right50,    nil, true) end)
@@ -33,6 +38,7 @@ hs.hotkey.bind(mash, '[', function() hs.window.focusedWindow():move(units.upleft
 hs.hotkey.bind(mash, ';', function() hs.window.focusedWindow():move(units.botleft50,  nil, true) end)
 hs.hotkey.bind(mash, "'", function() hs.window.focusedWindow():move(units.botright50, nil, true) end)
 hs.hotkey.bind(mash, 'm', function() hs.window.focusedWindow():move(units.maximum,    nil, true) end)
+hs.hotkey.bind(stage_enabled, 'm', function() hs.window.focusedWindow():move(stage_units.maximum,    nil, true) end)
 
 -- hs.hotkey.bind('cmd', 'right', function() hs.window.focusedWindow():move(units.right50,    nil, true) end)
 -- hs.hotkey.bind('cmd', 'left', function() hs.window.focusedWindow():move(units.left50,     nil, true) end)

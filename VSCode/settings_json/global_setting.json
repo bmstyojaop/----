@@ -4,8 +4,14 @@
   "editor.bracketPairColorization.enabled": true,
   // デフォルトのフォーマッタ：prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 保存時にフォーマットを適用
+  "editor.formatOnSave": true,
   // ミニマップを非表示
   "editor.minimap.enabled": false,
+  // 保存時にESLintのエラーを修正
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
   // 全角空白を表示
   "editor.renderWhitespace": "all",
   // タブのサイズをスペース2個分に割当
@@ -36,14 +42,20 @@
   "workbench.iconTheme": "material-icon-theme",
   // ワークベンチのアイコンをトップにする
   "workbench.activityBar.location": "top",
-  // VSCode開いたときの「ようこそ」を表示しない
-  "workbench.startupEditor": "none",
-  // 最大表示タブ数を制限する
-  "workbench.editor.limit.value": 5,
-  // ワークベンチのインデントを変更
-  "workbench.tree.indent": 16,
   // ワークベンチの補助線を変更
   "workbench.tree.renderIndentGuides": "always",
+  // ツリーのインデント
+  "workbench.tree.indent": 16,
+  // エディターたぶの高さをコンパクトにする
+  "window.density.editorTabHeight": "compact",
+  // 最大表示タブ数を制限する
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  // エディタタブのサイズを固定
+  "workbench.editor.tabSizing": "fixed",
+  // エディタタブの最大幅を設定
+  "workbench.editor.tabSizingFixedMaxWidth": 200,
 
   /** 【vim】*/
   // VSCodeVim 拡張で設定された Vim のキーではなく、VSCode で設定されているキーを実行するようにする
@@ -60,12 +72,11 @@
     { "after": ["<Esc>"], "before": ["j", "j"] }
   ],
   // クリップボードに貼り付け
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
 
-  /**【ターミナル】*/
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
+  /** git */
+  // リモートリポジトリを自動でfetchする
+  "git.autofetch": true,
 
   /**[TypeScript】*/
   // 関数や変数の被 import 数を表示
@@ -80,7 +91,5 @@
   },
   /** 【スペルチェッカー】 */
   // 単語追加
-  "cSpell.userWords": ["clsx"],
-
-
+  "cSpell.userWords": ["clsx"]
 }
